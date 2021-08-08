@@ -1,0 +1,156 @@
+.main
+    background-image: url(../img/mainBg.png)
+    background-repeat: no-repeat
+    background-position-x: center
+    background-position-y: calc( 50% + 100px )
+    background-size: cover
+    height: 100vh
+    color: #ffffff
+    position: relative
+    // display: none
+    &::before
+        content: ''
+        position: absolute
+        z-index: 1
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        background: linear-gradient( to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8))
+    &__img
+        display: none
+        height: 350px
+        width: 100%
+        background-image: url(../img/mainBg.png)
+        background-position-y: center
+        background-size: cover
+        background-repeat: no-repeat
+    &__container
+        position: relative
+        z-index: 2
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__wrap
+        height: 100%
+        border-left: 1px solid hsla(0,0%,100%,.16)
+        padding-left: 32px
+        padding-top: 30px
+        padding-bottom: 20px
+        display: flex
+        align-items: center
+        position: relative
+    &__footer
+        position: absolute
+        width: 100%
+        bottom: 16px
+        left: 32px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__img
+            width: 20px
+            padding: 3px
+            background-color: #ffffff
+            border-radius: 2px
+            margin-right: 8px
+        &__link
+            color: #ffffff
+        &__text
+            font-size: 10px
+            &--2
+                font-size: 12px
+                display: flex
+                align-items: center
+    &__bonus
+        &__row
+            align-items: flex-start
+            justify-content: flex-start
+        &__wrap
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            padding-right: 15px
+            background-repeat: no-repeat
+            background-position: 10px 10px
+            background-size: contain
+            &--1
+                background-image: url(../img/catalog.png)
+            &--2
+                background-image: url(../img/price.png)
+                background-size: 70px
+        &__text
+            font-size: 13px
+            text-align: right
+        &__item
+            background: linear-gradient(331deg, rgb(15, 13, 143), rgb(125, 124, 213))
+            width: 195px
+            position: relative
+            height: 64px
+            border-radius: 5px
+            margin-right: 15px
+            &:last-child
+                margin-right: 0
+        &__title
+            font-size: 10px
+            font-weight: normal
+            line-height: 130%
+            margin-bottom: 14px
+            letter-spacing: 1px
+        &__img
+            width: 27px
+            padding: 4px
+            background-color: #ffffff
+            height: 27px
+            border-radius: 50%
+            position: absolute
+            right: 0
+            top: 0
+            transform: translate(40%, -40%)
+            span
+                display: block
+                width: 100%
+                height: 100%
+                border-radius: 50%
+                padding: 3px
+                display: flex
+                align-items: center
+                justify-content: center
+                background-color: #8d8d8d
+            path
+                fill: #ffffff
+    &__title
+        margin-bottom: 15px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 40px
+            height: 3px
+            background-color: #fff
+            left: 0
+            top: -16px
+    &__subtitle
+        font-size: 18px
+        margin-bottom: 15px
+        font-family: 'Gilroy-500', sans-serif
+        font-weight: normal
+    &__button
+        background-color: #3d3bee
+        display: flex
+        align-items: center
+        color: #ffffff
+        line-height: 100%
+        font-size: 18px
+        padding: 17px 30px
+        border-radius: 28px
+        margin-bottom: 40px
+        &__img
+            width: 17px
+            display: block
+            margin-right: 3px
+            path
+                fill: #ffffff

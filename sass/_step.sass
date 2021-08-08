@@ -1,0 +1,379 @@
+.success
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    &__rocket
+        text-align: center
+        margin-bottom: 20px
+    &__title
+        font-weight: normal
+        font-family: 'Gilroy-500'
+        text-align: center
+        margin-bottom: 30px
+    &__bonus
+        &__item
+            margin-right: 0
+            margin-bottom: 10px
+        &__row
+            color: #fff
+            flex-direction: column
+            align-items: center
+        &__title
+            text-align: center
+    
+    
+.step
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    &--1
+        display: none
+    &--2
+        display: none
+    &--3
+        display: none
+    &--4
+        display: none
+    &--5
+        display: none
+    &--last
+        display: none
+    &--mail
+        display: none
+    &--success
+        display: none
+    &__title
+        font-family: 'Gilroy-500'
+        font-weight: normal
+        margin-bottom: 20px
+    &__input
+        border: 1px solid #cccccc
+        padding: 14px
+        display: block
+        width: 100%
+        font-size: 22px
+        line-height: 130%
+        background-color: #ededed
+        border-radius: 4px
+        &:focus
+            outline: none
+    &__form
+        width: 1024px
+        height: 570px
+        box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.2)
+        padding: 5px
+        background-color: #EDEDED
+        display: flex
+    &__left
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background-color: #fff
+        &--last
+            justify-content: center
+        &__box
+            padding: 30px 30px 0 30px
+    &__progress
+        margin-right: 40px
+        &__text
+            font-size: 12px
+            color: rgba(54, 54, 54, 0.7)
+            margin-bottom: 8px
+            span
+                font-size: 14px
+                color: #3d3bee
+        &__line
+            width: 480px
+            height: 6px
+            background-color: #D9D9D9
+            border-radius: 5px
+            position: relative
+            overflow: hidden
+        &__inner
+            height: 100%
+            position: absolute
+            background-color: #6B69C7
+            transition: 0.3s
+            &--1
+                width: 0
+            &--2
+                width: 20%
+            &--3
+                width: 40%
+            &--4
+                width: 60%
+            &--5
+                width: 80%
+    &__back
+        width: 42px
+        height: 42px
+        border: 1px solid rgba(0,0,0,.1)
+        border-radius: 50%
+        background-color: transparent
+        padding: 10px
+        margin-right: 20px
+        path
+            fill: rgba(0,0,0,.3)
+    &__next
+        display: flex
+        align-items: center
+        color: #fff
+        background-color: #3D3BEE
+        height: 42px
+        padding: 0 15px
+        border-radius: 21px
+        margin-bottom: 5px
+        &__arrow
+            margin-left: 5px
+        &__arrow
+            width: 20px
+        path
+            fill: #fff
+    &__footer
+        display: flex
+        padding: 21px 30px 10px 30px
+        border-top: 1px solid #e6e6e6
+        &__box
+            display: flex
+        &__wrap
+            &__text
+                color: #a6a6a6
+                font-size: 11px
+    &__right
+        background-color: #F6F6F6
+        padding: 25px 20px 10px
+        width: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &--last
+            justify-content: center
+            background-color: #fff
+            box-shadow: 2.5px 8.7px 15px 0 #e6e6e6
+            border-left: 1px solid #e6e6e6
+            max-width: 450px
+        &__box
+            &--bottom
+                width: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+        &__footer
+            display: flex
+            align-items: center
+            font-size: 12px
+            color: rgba(54, 54, 54, 0.7)
+            display: flex
+            &--mobile
+                display: none
+            &__img
+                width: 20px
+                height: 20px
+                background-color: #fff
+                padding: 3px
+                margin-right: 8px
+        &__msg
+            font-size: 13px
+            line-height: 150%
+            box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.05)
+            background-color: #fff
+            border-radius: 4px
+            position: relative
+            color: #363636
+            &__wrap
+                padding: 5px 18px 5px 10px
+                overflow: auto
+                max-height: 100px
+            &::before
+                content: ''
+                position: absolute
+                border: 10px solid transparent
+                border-bottom: 10px solid #fff
+                top: 0
+                left: 30px
+                transform: translateY(-100%)
+    &__photo
+        width: 70px
+        height: 70px
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: center
+        &--mobile
+            width: 40px
+            height: 40px
+            min-height: 40px
+            min-width: 40px
+            margin-right: 10px
+        &__wrap
+            width: 100%
+            height: 100%
+            border-radius: 50%
+            overflow: hidden
+        &__status
+            position: absolute
+            width: 12px
+            height: 12px
+            background-color: #fff
+            border-radius: 50%
+            border: 2px solid #fff
+            background-color: #1bb157
+            right: 4px
+            bottom: 4px
+    &__founder
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 20px
+        &__box
+            height: 50px
+            overflow: auto
+        &__status
+            display: block
+            width: 5px
+            height: 5px
+            border-radius: 50%
+            background-color: #1bb157
+        &--mobile
+            display: none
+            background-color: #EDEDED
+            padding: 10px 10px 15px
+            border-radius: 20px 20px 20px 3px
+            margin-bottom: 10px
+        &__name
+            color: #363636
+            font-size: 16px
+            &__pos
+                font-size: 12px
+                color: rgba(54, 54, 54, 0.7)
+            &--mobile
+                display: flex
+                align-items: center
+                margin-bottom: 5px
+        &__text
+            font-size: 12px
+            color: rgba(54, 54, 54, 0.7)
+            &--mobile
+                font-style: italic
+                font-weight: 600
+    &__bonus
+        flex-direction: column
+        color: #fff
+        width: 100%
+        &--last
+            position: relative
+        &__arrow
+            position: absolute
+            transform: rotateX(180deg)
+            bottom: -45px
+            right: 20px
+            svg
+                width: 50px
+            path
+                fill: #3D3BEE
+        &--mobile
+            display: none
+        &__row
+            &--last
+                color: #ffff
+        &__wrap
+            background-position: 10px 10px !important
+        &__item
+            width: 100% !important
+            margin-right: 0
+            margin-bottom: 15px
+            &:last-of-type
+                margin-bottom: 50px
+    &__radio
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr))
+        grid-gap: 15px
+        &__ok
+            position: absolute
+            width: 20px
+            height: 20px
+            left: 16px
+            top: 50%
+            transform: translateY(-50%)
+            background-color: #e6e6e6
+            border-radius: 50%
+        &__input
+            display: none
+            &:checked + .step__radio__ok
+                border: 2px solid #3d3bee
+            &:checked + .step__radio__ok::before
+                content: ''
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                width: 10px
+                height: 10px
+                background-color: #3d3bee
+                border-radius: 50%
+        &__label
+            font-size: 16px
+            color: #363636
+            cursor: pointer
+            border: 1px solid #e6e6e6
+            padding: 13px 16px
+            padding-left: 50px
+            border-radius: 5px
+            position: relative
+
+    &__subtitle
+        color: rgba(54, 54, 54, 0.7)
+        margin-bottom: 35px
+    &__tel
+        margin-bottom: 20px
+    &__button
+        &__img
+            display: block
+            width: 20px
+            margin-right: 5px
+            path
+                fill: #fff
+        &--last
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: #3D3BEE
+            color: #fff
+            padding: 12px 30px
+            width: 100%
+            border-radius: 25px
+            margin-bottom: 20px
+    &__check
+        display: none
+        &:checked + &__ok
+            background-color: #3D3BEE
+            background-image: url(../img/check.png)
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 12px
+        &__ok
+            display: block
+            width: 15px
+            height: 15px
+            background-color: #e6e6e6
+            box-shadow: 0 0 5px rgba(0,0,0, 0.3)
+            border-radius: 3px
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+    &__label
+        &--check
+            font-size: 12px
+            cursor: pointer
+            position: relative
+            padding-left: 20px
+            display: block
+            margin: auto
+            max-width: 300px
+            a
+                text-decoration: none
+                color: #3D3BEE
